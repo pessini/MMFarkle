@@ -14,6 +14,7 @@
 		567DBB0C1ABDE04D007FBDED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567DBB0B1ABDE04D007FBDED /* Images.xcassets */; };
 		567DBB0F1ABDE04D007FBDED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567DBB0D1ABDE04D007FBDED /* LaunchScreen.xib */; };
 		567DBB1B1ABDE04D007FBDED /* FarkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 567DBB1A1ABDE04D007FBDED /* FarkleTests.m */; };
+		567DBB261ABDE0FD007FBDED /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 567DBB251ABDE0FD007FBDED /* DieLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		567DBB141ABDE04D007FBDED /* FarkleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarkleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		567DBB191ABDE04D007FBDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		567DBB1A1ABDE04D007FBDED /* FarkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FarkleTests.m; sourceTree = "<group>"; };
+		567DBB241ABDE0FD007FBDED /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieLabel.h; sourceTree = "<group>"; };
+		567DBB251ABDE0FD007FBDED /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +84,11 @@
 		567DBAFD1ABDE04D007FBDED /* Farkle */ = {
 			isa = PBXGroup;
 			children = (
+				567DBB271ABDE107007FBDED /* Model */,
+				567DBB281ABDE10F007FBDED /* View */,
+				567DBB291ABDE115007FBDED /* Controller */,
 				567DBB021ABDE04D007FBDED /* AppDelegate.h */,
 				567DBB031ABDE04D007FBDED /* AppDelegate.m */,
-				567DBB051ABDE04D007FBDED /* ViewController.h */,
-				567DBB061ABDE04D007FBDED /* ViewController.m */,
-				567DBB081ABDE04D007FBDED /* Main.storyboard */,
 				567DBB0B1ABDE04D007FBDED /* Images.xcassets */,
 				567DBB0D1ABDE04D007FBDED /* LaunchScreen.xib */,
 				567DBAFE1ABDE04D007FBDED /* Supporting Files */,
@@ -117,6 +120,32 @@
 				567DBB191ABDE04D007FBDED /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		567DBB271ABDE107007FBDED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		567DBB281ABDE10F007FBDED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				567DBB081ABDE04D007FBDED /* Main.storyboard */,
+				567DBB241ABDE0FD007FBDED /* DieLabel.h */,
+				567DBB251ABDE0FD007FBDED /* DieLabel.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		567DBB291ABDE115007FBDED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				567DBB051ABDE04D007FBDED /* ViewController.h */,
+				567DBB061ABDE04D007FBDED /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +251,7 @@
 				567DBB071ABDE04D007FBDED /* ViewController.m in Sources */,
 				567DBB041ABDE04D007FBDED /* AppDelegate.m in Sources */,
 				567DBB011ABDE04D007FBDED /* main.m in Sources */,
+				567DBB261ABDE0FD007FBDED /* DieLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
