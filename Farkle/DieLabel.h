@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DieLabelDelegate <NSObject>
+
+- (void)onDieLabelTapped:(UILabel *)label;
+
+@end
+
 @interface DieLabel : UILabel
+
+@property (nonatomic, assign) id<DieLabelDelegate> delegate;
+
+- (void)roll;
 
 @end

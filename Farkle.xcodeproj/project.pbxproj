@@ -84,11 +84,11 @@
 		567DBAFD1ABDE04D007FBDED /* Farkle */ = {
 			isa = PBXGroup;
 			children = (
+				567DBB021ABDE04D007FBDED /* AppDelegate.h */,
+				567DBB031ABDE04D007FBDED /* AppDelegate.m */,
 				567DBB271ABDE107007FBDED /* Model */,
 				567DBB281ABDE10F007FBDED /* View */,
 				567DBB291ABDE115007FBDED /* Controller */,
-				567DBB021ABDE04D007FBDED /* AppDelegate.h */,
-				567DBB031ABDE04D007FBDED /* AppDelegate.m */,
 				567DBB0B1ABDE04D007FBDED /* Images.xcassets */,
 				567DBB0D1ABDE04D007FBDED /* LaunchScreen.xib */,
 				567DBAFE1ABDE04D007FBDED /* Supporting Files */,

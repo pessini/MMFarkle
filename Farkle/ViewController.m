@@ -7,21 +7,44 @@
 //
 
 #import "ViewController.h"
+#import "DieLabel.h"
 
-@interface ViewController ()
+@interface ViewController () <DieLabelDelegate>
+
+@property (strong, nonatomic) IBOutletCollection(DieLabel) NSArray *labels;
+@property NSMutableArray *dice;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+#pragma mark -UIView Life Cycles
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    for (DieLabel *label in self.labels) {
+        label.delegate = self;
+    }
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -DieLabelDelegate
+
+-(void)onDieLabelTapped:(UILabel *)label
+{
+    
+}
+
+#pragma mark -IBAction
+
+- (IBAction)onRollButtonPressed:(UIButton *)sender
+{
+    // loop through the labels (dice)
+    for (DieLabel *label in self.labels)
+    {
+        [label roll];
+    }
 }
 
 @end

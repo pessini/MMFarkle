@@ -10,12 +10,16 @@
 
 @implementation DieLabel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+- (IBAction)onTapped:(UITapGestureRecognizer *)sender
+{
+    [self.delegate onDieLabelTapped:self];
 }
-*/
+
+- (void)roll
+{
+    NSInteger random = arc4random_uniform(6) + 1;
+    [self setText:[NSString stringWithFormat:@"%ld", (long)random]];
+}
 
 @end
