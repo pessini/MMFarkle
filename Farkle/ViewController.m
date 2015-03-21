@@ -23,6 +23,9 @@
 {
     [super viewDidLoad];
 
+    // initialize the dice Array
+    self.dice = [NSMutableArray new];
+
     for (DieLabel *label in self.labels) {
         label.delegate = self;
     }
@@ -33,7 +36,9 @@
 
 -(void)onDieLabelTapped:(UILabel *)label
 {
-    
+
+    [label setAlpha:0.5f];
+    [self.dice addObject:label];
 }
 
 #pragma mark -IBAction
@@ -43,7 +48,11 @@
     // loop through the labels (dice)
     for (DieLabel *label in self.labels)
     {
-        [label roll];
+        // only call roll on the DieLabels not in the dice array
+        if (![self.dice containsObject:label])
+        {
+            [label roll];
+        }
     }
 }
 
