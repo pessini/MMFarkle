@@ -10,7 +10,6 @@
 
 @implementation DieLabel
 
-
 - (IBAction)onTapped:(UITapGestureRecognizer *)sender
 {
     [self.delegate onDieLabelTapped:self];

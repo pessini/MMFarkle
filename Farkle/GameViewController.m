@@ -61,7 +61,7 @@
     // loop through the labels (dice)
     for (DieLabel *label in self.labels)
     {
-        // insert the dice which need to be matched in diceToMatch array
+        // insert the dice that need to be matched in diceToMatch array
         // only call roll on the DieLabels not in the dice array
         if (![self.dice containsObject:label])
         {

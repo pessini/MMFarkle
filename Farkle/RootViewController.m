@@ -39,6 +39,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [self.tableView reloadData];
+    self.navigationItem.rightBarButtonItem.enabled = false;
 }
 
 #pragma mark -UITableViewDataSource
@@ -123,8 +124,8 @@
 {
     self.players = [NSMutableArray new];
 
-    [self.players addObject:[[Player alloc] initWithName:@"Leandro Pessini" AndScore:500]];
-    [self.players addObject:[[Player alloc] initWithName:@"Matt Larkin" AndScore:10000]];
+    [self.players addObject:[[Player alloc] initWithName:@"Leandro Pessini" AndScore:0]];
+    [self.players addObject:[[Player alloc] initWithName:@"Matt Larkin" AndScore:0]];
     [self.players addObject:[[Player alloc] initWithName:@"Sherrie Jones" AndScore:0]];
     [self.players addObject:[[Player alloc] initWithName:@"Gabe Morales" AndScore:0]];
     [self.players addObject:[[Player alloc] initWithName:@"Joanna Dickerson" AndScore:0]];
