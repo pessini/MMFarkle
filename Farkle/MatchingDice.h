@@ -13,6 +13,6 @@
 @property NSMutableArray *diceToMatch;
 @property NSInteger currentScore;
 
--(NSInteger)matchingDice: (NSMutableArray *)diceToMatch withCurrentScore:(NSInteger)currentScore;
+-(NSInteger)matchingDice: (NSArray *)diceToMatch withCurrentScore:(NSInteger)currentScore;
 
 @end
